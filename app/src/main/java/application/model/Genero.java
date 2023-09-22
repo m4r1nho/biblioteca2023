@@ -1,33 +1,32 @@
 package application.model;
 
-import jakarta.persistence.Entiny;
-import jakarta.parsistence.GeneratedValue;
-import jakarta.parsistence.GenerationType;
-import jakarta.parsistence.Id;
-import jakarta.parsistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-@Table(name="generos")
+@Table(name = "generos")
 public class Genero {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
 
-    public int getId(){
+    public int getId() {
         return id;
     }
-    public void setId(int id){
+
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome){
-        this.nome;
+    public void setNome(String nome) {
+        this.nome = nome; // Correção: atribuir o valor do parâmetro nome ao campo nome
     }
-
-
 }

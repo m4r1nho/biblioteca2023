@@ -7,8 +7,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
+
 import application.model.Autor;
 import application.model.Genero;
+import application.model.AutorRepository;
+import application.model.GeneroRepository;
+import application.model.LivroRepository;
 
 
 
